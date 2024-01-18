@@ -1,10 +1,13 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Montserrat, Montserrat_Alternates } from "next/font/google";
 import "./globals.scss";
-import Navigation from "./components/layout/navigation/Navigation";
-import Footer from "./components/layout/footer/Footer";
+import Navigation from "./components/navigation/Navigation";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
+export const montserratAlt = Montserrat_Alternates({
+  subsets: ["latin"],
+  weight: ["800"],
+});
 
 export const metadata: Metadata = {
   title: {
@@ -24,8 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={montserrat.className + " flex flex-col min-h-[100vh]"}>
         <Navigation />
-        <main className="pt-14 flex-1 max-w-7xl">{children}</main>
-        <Footer />
+        <main className="pt-14 flex-1">{children}</main>
       </body>
     </html>
   );
