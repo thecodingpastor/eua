@@ -1,5 +1,4 @@
-import Ally from "@/app/assets/ally.svg";
-import Gadgets from "@/app/assets/gadgets.webp";
+import { Ally, Gadgets } from "@/app/assets";
 
 import Image from "next/image";
 

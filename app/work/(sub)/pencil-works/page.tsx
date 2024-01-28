@@ -1,16 +1,12 @@
 import Image from "next/image";
 
-import Pencil from "@/app/assets/pencil-works.svg";
+import { PencilWorks } from "@/app/assets";
+
 const PencilWorksPage = () => {
   return (
-    <div className="dflex items-center justify-center">
-      <figure className="relative w-[90vw] h-[220px] sm:h-[300px] md:h-[500px]">
-        <Image
-          src={Pencil}
-          alt="Pencil Works"
-          fill
-          // style={{ objectFit: "contain" }}
-        />
+    <div className="overflow-x-auto whitespace-nowrap pb-5 mb-10 mx-auto">
+      <figure className="mx-auto relative w-[90%] h-[70%] min-w-[700px] overflow-x-auto whitespace-nowrap flex justify-center">
+        <Image src={PencilWorks} alt="Pencil Works" width={900} height={700} />
       </figure>
     </div>
   );

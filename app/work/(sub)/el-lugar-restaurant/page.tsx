@@ -1,17 +1,33 @@
-import React from "react";
+import Footer from "@/app/components/footer/Footer";
+import PreFooter from "./_components/PreFooter";
+import ProjectOverview from "./_components/ProjectOverview";
+import UserResearch from "./_components/UserResearch";
+import ResearchAnalysis from "./_components/ResearchAnalysis";
+import UserJourneyMap from "./_components/UserJourneyMap";
+import UsabiltyStudy from "./_components/UsabiltyStudy";
+import AccessiblityConsideration from "./_components/AccessiblityConsideration";
+import DesignProcess from "./_components/DesignProcess";
+import MockUps from "./_components/MockUps";
+import Phones from "./_components/Phones";
+import ElLugarBanner from "./_components/Banner";
 
-const AllyDesignsPage = () => {
+const ElLugarPage = () => {
   return (
-    <div>
-      <h3>El Lugar Page</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo fuga
-        excepturi illo harum repellendus? Placeat qui in facere praesentium!
-        Explicabo veniam rerum, numquam sequi accusantium dignissimos nulla in
-        consequatur.
-      </p>
-    </div>
+    <>
+      <ElLugarBanner />
+      <ProjectOverview />
+      <UserResearch />
+      <ResearchAnalysis />
+      <UserJourneyMap />
+      <DesignProcess />
+      <UsabiltyStudy />
+      <MockUps />
+      <AccessiblityConsideration />
+      <Phones />
+      <PreFooter />
+      <Footer className="bg-[#461196] text-white -mt-1" />
+    </>
   );
 };
 
-export default AllyDesignsPage;
+export default ElLugarPage;

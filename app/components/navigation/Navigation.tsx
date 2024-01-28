@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import Logo from "../../assets/eua-logo.svg";
+import SideNav from "./SideNav";
 
 const links = [
   { label: "Work", href: "/work" },
@@ -21,15 +22,9 @@ const Navigation = () => {
   }, [pathname]);
 
   return (
-    <nav
-      className="py-2 px-10 h-[60px] flex items-center justify-between fixed bg-white w-full z-40 text-sm"
-      // style={{
-      //   boxShadow:
-      //     "0px 1px 2px 0px rgba(0, 0, 0, 0.15), 0px 0px 5px 0px rgba(0, 0, 0, 0.05)",
-      // }}
-    >
+    <nav className="py-2 px-10 h-[60px] flex items-center justify-between fixed bg-white w-full z-40 text-sm">
       <Link href="/">
-        <Image src={Logo} width={70} height={30} alt="EUA Logo" />
+        <Image src={Logo} width={60} height={30} alt="EUA Logo" />
       </Link>
       <ul className="hidden sm:flex gap-8">
         {links.map((link) => (
@@ -45,6 +40,7 @@ const Navigation = () => {
           </Link>
         ))}
       </ul>
+      <SideNav ActiveLink={ActiveLink} />
     </nav>
   );
 };

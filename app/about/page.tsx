@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // import PDFFile from "../../public/ekom.pdf";
-import Ekom from "../assets/ekom-svg.svg";
+import { EkomSVG } from "../assets";
 import { MdOutlineArrowBack } from "react-icons/md";
 import BackButton from "../contact/components/BackButton";
 import Footer from "../components/footer/Footer";
@@ -18,7 +18,12 @@ const AboutPage = () => {
       <div className="pt-32 px-6 max-w-4xl mx-auto">
         <div className="flex flex-col md:flex-row gap-10 items-center max-w-3xl mx-auto">
           <figure className="relative w-48 h-48 rounded-full bg-yellow-500">
-            <Image src={Ekom} alt="EkomObong" fill className="rounded-full" />
+            <Image
+              src={EkomSVG}
+              alt="EkomObong"
+              fill
+              className="rounded-full"
+            />
           </figure>
           <h3
             style={{
@@ -37,9 +42,9 @@ const AboutPage = () => {
           graphics. Currently transitioning my career towards UX, I am driven by
           a passion for creating accessible, human-centered designs. My journey
           is fueled by a blend of creative arts, including music and a deep
-          appreciation for arts and design. As I aspire to be Nigeria's leading
-          UX Designer, my portfolio showcases a commitment to innovation and
-          excellence."
+          appreciation for arts and design. As I aspire to be Nigeria&apos;s
+          leading UX Designer, my portfolio showcases a commitment to innovation
+          and excellence.
         </p>
 
         <div className="mt-16 flex sm:block flex-col items-center">
@@ -86,6 +91,7 @@ const AboutPage = () => {
                 <li>Webflow</li>
                 <li>Lumion</li>
                 <li>Microsoft Office</li>
+                <li>Procreate</li>
               </ul>
             </div>
           </div>
@@ -118,13 +124,6 @@ const AboutPage = () => {
           </div>
         </div>
         <footer className="flex justify-between items-center mt-28">
-          {/* <Link
-          href="."
-          className="flex gap-3 items-center bg-white py-3 px-6 rounded-3xl"
-        >
-          <MdOutlineArrowBack />
-          Back
-        </Link> */}
           <BackButton />
           <Link
             href="ekom.pdf"

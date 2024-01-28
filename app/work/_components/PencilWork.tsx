@@ -1,6 +1,6 @@
-import GW from "@/app/assets/gw.webp";
-import GWText from "@/app/assets/gw-text.webp";
 import Image from "next/image";
+
+import { GW, GW_Text } from "@/app/assets";
 import Box from "./Box";
 
 const PencilWork = () => {
@@ -13,7 +13,7 @@ const PencilWork = () => {
         style={{ borderRadius: "18px" }}
       />
       <Image
-        src={GWText}
+        src={GW_Text}
         alt="Graphite White"
         width={150}
         height={150}

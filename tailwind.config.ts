@@ -20,9 +20,7 @@ const config: Config = {
     },
     fontFamily: {
       Montserrat: ["Montserrat", "sans-serif"],
-      Georgia: ["Georgia", "sans-serif"],
-      menu: ["Manrope", "sans-serif"],
-      libre: ["'Libre Baskerville'", "sans-serif"],
+      MontserratAlt: ["Montserrat Alternatives", "sans-serif"],
     },
     extend: {},
   },

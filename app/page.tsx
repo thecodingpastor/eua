@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import EUA_BG from "./assets/eua-bg.png";
+import { EUA_BG } from "./assets";
 import Footer from "./components/footer/Footer";
 const HomePage = () => {
   return (
@@ -23,10 +23,10 @@ const HomePage = () => {
           <div className="flex flex-col gap-5 font-light text-sm text-center justify-center items-center mt-10 mb-16">
             <p>Welcome to my portfolio website</p>
             <p>
-              I'm a multifaceted designer specializing in UX, architecture, and
-              graphics. Passionate about human-centered design, I'm on a journey
-              to become Nigeria's top UX Designer. Explore my portfolio to see
-              where creativity meets functionality in design.
+              I&apos;m a multifaceted designer specializing in UX, architecture,
+              and graphics. Passionate about human-centered design, I&apos;m on
+              a journey to become Nigeria&apos;s top UX Designer. Explore my
+              portfolio to see where creativity meets functionality in design.
             </p>
           </div>
           <Link

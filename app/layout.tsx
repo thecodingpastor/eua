@@ -25,9 +25,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={montserrat.className + " flex flex-col min-h-[100vh]"}>
+      <body
+        className={
+          montserrat.className + " flex flex-col min-h-[100vh] relative"
+        }
+      >
         <Navigation />
         <main className="pt-14 flex-1">{children}</main>
+        <div id="modal"></div>
+        <div id="backdrop"></div>
       </body>
     </html>
   );

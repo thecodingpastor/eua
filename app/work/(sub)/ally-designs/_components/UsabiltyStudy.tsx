@@ -2,11 +2,7 @@ import Image from "next/image";
 
 import { montserratAlt } from "@/app/layout";
 
-import Users from "@/app/assets/icons/users.svg";
-import Location from "@/app/assets/icons/location.svg";
-import Timer from "@/app/assets/icons/timer.svg";
-import Write from "@/app/assets/icons/write.svg";
-import Affinity from "@/app/assets/affinity.webp";
+import { Location, Timer, Write, Affinity, Users } from "@/app/assets";
 
 const UsabiltyStudy = () => {
   return (

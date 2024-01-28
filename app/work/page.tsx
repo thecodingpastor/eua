@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import EUA_BG from "@/app/assets/eua-bg.png";
+import { EUA_BG } from "../assets";
 import Works from "./_components/Works";
 import Footer from "../components/footer/Footer";
 

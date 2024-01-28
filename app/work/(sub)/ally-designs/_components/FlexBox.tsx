@@ -1,8 +1,7 @@
 import { montserratAlt } from "@/app/layout";
 import Image from "next/image";
 
-import UDIA from "@/app/assets/udia.webp";
-import Wheel from "@/app/assets/wheel.webp";
+import { UDIA, Wheel } from "@/app/assets";
 
 const FlexBox = () => {
   return (

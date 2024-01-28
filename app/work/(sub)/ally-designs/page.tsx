@@ -17,7 +17,7 @@ const AllyDesignsPage = () => {
       <UsabiltyStudy />
       <MockUps />
       <PreFooter />
-      <Footer className="bg-yellow-500 text-black -mt-[5px]" />
+      <Footer className="bg-yellow-500 text-black" />
     </div>
   );
 };

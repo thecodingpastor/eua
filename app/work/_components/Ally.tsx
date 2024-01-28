@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Box from "./Box";
 
-import Ally from "@/app/assets/ally.svg";
+import { Ally } from "@/app/assets";
 
 const AllyDesigns = () => {
   return (

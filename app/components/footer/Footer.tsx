@@ -16,7 +16,7 @@ const links = [
 const Footer: React.FC<{ className?: string }> = ({ className }) => {
   return (
     <footer
-      className={`flex flex-col md:flex-row gap-5 items-center justify-between px-10 py-9 text-[#8F8F8F] text-sm mt-20 ${
+      className={`flex flex-col md:flex-row gap-5 items-center justify-between px-10 py-9 text-[#8F8F8F] text-sm ${
         className ? className : ""
       }`}
     >

@@ -1,8 +1,8 @@
+import Image from "next/image";
+
 import { montserratAlt } from "@/app/layout";
 
-import One from "@/app/assets/one.webp";
-import Two from "@/app/assets/two.webp";
-import Image from "next/image";
+import { One, Two } from "@/app/assets";
 
 const ResearchAnalysis = () => {
   return (
